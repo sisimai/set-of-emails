@@ -60,5 +60,8 @@ fix-commit-message: git-commit-amend
 cancel-the-latest-commit: git-reset-soft
 remove-added-file: git-rm-cached
 
+diff push branch:
+	@$(MAKE) git-$@
+
 clean:
 
