@@ -24,6 +24,7 @@ in this repository are read from `make test` at p5-Sisimai and rb-Sisimai.
 |  - reason-is-undefined/       | Reason is "undefined" in parsed results      |
 |  - sisimai-cannot-parse-yet/  | Emails could not be parsed by Sisimai        |
 |  - something-is-wrong/        | Sisimai can parse but something is wrong     |
+| to-be-parsed-for-test/        | Email files to be parsed for test            |
 
 See Also
 ========
