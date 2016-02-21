@@ -12,6 +12,12 @@ GIT   := /usr/bin/git
 B      = master
 V      = neko
 
+PRIVATEMAILS := private
+PUBLICEMAILS := maildir/bsd
+DOSFORMATSET := maildir/dos
+MACFORMATSET := maildir/mac
+
+
 .DEFAULT_GOAL = git-status
 
 # -----------------------------------------------------------------------------
@@ -62,6 +68,13 @@ remove-added-file: git-rm-cached
 
 diff push branch:
 	@$(MAKE) git-$@
+
+update-sample-emails:
+	for v in `find $(PUBLICEMAILS) -name '*-01.eml' -type f`; do \
+		f="`basename $$v`" ;\
+		nkf -Lw $$v > $(DOSFORMATSET)/$$f ;\
+		nkf -Lm $$v > $(MACFORMATSET)/$$f ;\
+	done
 
 clean:
 
