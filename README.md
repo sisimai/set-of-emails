@@ -5,7 +5,7 @@
         |____/ \___|\__|  \___/|_|   |_____|_| |_| |_|\__,_|_|_|___/
                                                                     
 About "set-of-emails" repository
-================================
+================================================================================
 This repository hold bounce mail collections for developing Sisimai. Email files
 in this repository are read from `make test` at p5-Sisimai and rb-Sisimai.
 
@@ -28,7 +28,7 @@ in this repository are read from `make test` at p5-Sisimai and rb-Sisimai.
 | to-be-parsed-for-test/        | Email files to be parsed for test            |
 
 See Also
-========
+================================================================================
 * __Sisimai Project__ | [github.com/sisimai](https://github.com/sisimai)
 * __libsisimai.org__ | [Sisimai — A successor to bounceHammer, Library to parse error mails](http://libsisimai.org/)
 * __Perl Verson__ | [Perl version of Sisimai(Stable)](https://github.com/sisimai/p5-Sisimai)
