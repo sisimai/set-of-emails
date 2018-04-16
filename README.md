@@ -12,7 +12,7 @@ in this repository are read from `make test` at p5-Sisimai and rb-Sisimai.
 
 | Directory                     | Description                                  |
 |-------------------------------|----------------------------------------------|
-| jsonapi/                      | JSON files include bounce objects            |
+| jsonobj/                      | JSON files include bounce objects            |
 | mailbox/                      | Unix mbox files                              |
 | maildir/                      | Email files                                  |
 |  - bsd/                       | A newline is LF                              |
