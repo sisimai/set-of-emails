@@ -34,3 +34,15 @@ See Also
 * __Perl Verson__ | [Perl version of Sisimai(Stable)](https://github.com/sisimai/p5-Sisimai)
 * __Ruby verson__ | [Ruby version of Sisimai(Under the development)](https://github.com/sisimai/rb-Sisimai)
 
+Author
+===============================================================================
+[@azumakuniyuki](https://twitter.com/azumakuniyuki)
+
+Copyright
+===============================================================================
+Copyright (C) 2018 azumakuniyuki, All Rights Reserved.
+
+License
+===============================================================================
+This software is distributed under The BSD 2-Clause License.
+
