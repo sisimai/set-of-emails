@@ -16,8 +16,6 @@ PRIVATEMAILS := private
 PUBLICEMAILS := maildir/bsd
 DOSFORMATSET := maildir/dos
 MACFORMATSET := maildir/mac
-
-
 .DEFAULT_GOAL = git-status
 
 # -----------------------------------------------------------------------------
@@ -29,7 +27,7 @@ git-status:
 git-push:
 	@ for v in `$(GIT) remote show | grep -v origin`; do \
 		printf "[%s]\n" $$v; \
-		$(GIT) push --tags $$v $(B); \
+		$(GIT) push --tags $$v `$(MAKE) git-current-branch`; \
 	done
 
 git-tag-list:
@@ -43,6 +41,9 @@ git-branch:
 
 git-branch-delete:
 	$(GIT) branch --merged | grep '^ ' | grep -v 'master' | xargs $(GIT) branch -d
+
+git-current-branch:
+	@ $(GIT) branch --contains=HEAD | grep '*' | awk '{ print $$2 }'
 
 git-commit-amend:
 	$(GIT) commit --amend
