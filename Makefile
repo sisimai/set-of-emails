@@ -50,7 +50,7 @@ git-commit-amend:
 
 git-follow-log:
 	$(GIT) log --follow -p $(V) || \
-		printf "\nUsage:\n %% make -f Repository.mk $@ V=<filename>\n"
+		printf "\nUsage:\n %% make $@ V=<filename>\n"
 
 git-branch-tree:
 	$(GIT) log --graph \
@@ -58,7 +58,7 @@ git-branch-tree:
 
 git-rm-cached:
 	$(GIT) rm -f --cached $(V) || \
-		printf "\nUsage:\n %% make -f Repository.mk $@ V=<filename>\n"
+		printf "\nUsage:\n %% make $@ V=<filename>\n"
 
 git-reset-soft:
 	$(GIT) reset --soft HEAD^
