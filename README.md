@@ -42,4 +42,5 @@ Copyright (C) 2018 azumakuniyuki, All Rights Reserved.
 License
 ===============================================================================
 This software is distributed under The BSD 2-Clause License.
+Files in logo/ created by @batarian71 are distributed under CC BY 4.0
 
