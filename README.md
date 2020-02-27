@@ -33,7 +33,7 @@ Author
 
 Copyright
 ===============================================================================
-Copyright (C) 2018-2019 azumakuniyuki, All Rights Reserved.
+Copyright (C) 2018-2020 azumakuniyuki, All Rights Reserved.
 
 License
 ===============================================================================
