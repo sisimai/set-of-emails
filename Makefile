@@ -13,6 +13,7 @@ B      = master
 V      = neko
 
 PRIVATEMAILS := private
+BENCHMARKSET := benchmark
 PUBLICEMAILS := maildir/bsd
 DOSFORMATSET := maildir/dos
 MACFORMATSET := maildir/mac
@@ -77,5 +78,11 @@ update-sample-emails:
 		nkf -Lm $$v > $(MACFORMATSET)/$$f ;\
 	done
 
+update-benchmark-emails:
+	mkdir -p $(BENCHMARKSET)/
+	for v in `find $(PUBLICEMAILS) $(PRIVATEMAILS)/ -type f -name '*.eml'`; do \
+		f=`basename $$v` ;\
+		test -f $(BENCHMARKSET)/$$f || $(CP) -vRp $v $(BENCHMARKSET)/ ;\
+	done
 clean:
 
